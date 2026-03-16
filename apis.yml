@@ -1,0 +1,44 @@
+aid: openwallet-foundation
+name: OpenWallet Foundation
+description: >-
+  The OpenWallet Foundation is a Linux Foundation Europe project that brings developers and standards organizations together to facilitate global interoperability of verifiable credentials and digital wallet technology. It develops open source engines for secure, privacy-preserving digital identity solutions.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Digital Wallet
+  - Identity
+  - Credentials
+  - Linux Foundation
+created: '2026-03-16'
+modified: '2026-03-16'
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/openwallet-foundation/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: openwallet-foundation:openwallet-foundation-api
+    name: OpenWallet Foundation API
+    description: >-
+      Programmatic access to OpenWallet Foundation wallet engines, verifiable credential APIs, and digital identity tools.
+    humanURL: https://openwallet.foundation/projects/
+    tags:
+  - Digital Wallet
+  - Identity
+  - Credentials
+  - Linux Foundation
+    properties:
+      - type: Documentation
+        url: https://openwallet.foundation/projects/
+common:
+  - type: Documentation
+    name: OpenWallet Foundation Documentation
+    description: Official documentation for OpenWallet Foundation.
+    url: https://openwallet.foundation/projects/
+  - type: GitHubOrg
+    name: OpenWallet Foundation GitHub
+    description: Source code and repositories for OpenWallet Foundation.
+    url: https://github.com/openwallet-foundation
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
