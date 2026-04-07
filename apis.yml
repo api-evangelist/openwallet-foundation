@@ -23,10 +23,10 @@ apis:
       Programmatic access to OpenWallet Foundation wallet engines, verifiable credential APIs, and digital identity tools.
     humanURL: https://openwallet.foundation/projects/
     tags:
-  - Digital Wallet
-  - Identity
-  - Credentials
-  - Linux Foundation
+      - Digital Wallet
+      - Identity
+      - Credentials
+      - Linux Foundation
     properties:
       - type: Documentation
         url: https://openwallet.foundation/projects/
