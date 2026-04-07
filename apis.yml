@@ -7,9 +7,9 @@ position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
+  - Credentials
   - Digital Wallet
   - Identity
-  - Credentials
   - Linux Foundation
 created: '2026-03-16'
 modified: '2026-03-16'
@@ -23,9 +23,9 @@ apis:
       Programmatic access to OpenWallet Foundation wallet engines, verifiable credential APIs, and digital identity tools.
     humanURL: https://openwallet.foundation/projects/
     tags:
+      - Credentials
       - Digital Wallet
       - Identity
-      - Credentials
       - Linux Foundation
     properties:
       - type: Documentation
