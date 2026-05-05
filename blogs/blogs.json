@@ -1,0 +1,13 @@
+{
+  "repo": "openwallet-foundation",
+  "feeds": [
+    {
+      "source": "https://openwallet.foundation/blog/",
+      "feed_url": "https://openwallet.foundation/feed/",
+      "saved": 10,
+      "title": "OpenWallet Foundation"
+    }
+  ],
+  "post_count": 10,
+  "fetched": "2026-05-03T23:33:04Z"
+}
