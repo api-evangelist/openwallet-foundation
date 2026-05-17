@@ -129,11 +129,11 @@ common:
     description: Catalog of OpenWallet Foundation Impact, Growth, and Lab projects.
   - url: https://github.com/openwallet-foundation
     name: GitHub Organization
-    type: GitHub Organization
+    type: GitHubOrganization
     description: OpenWallet Foundation GitHub organization with project source code.
   - url: https://github.com/openwallet-foundation-labs
     name: GitHub Labs
-    type: GitHub Organization
+    type: GitHubOrganization
     description: OpenWallet Foundation Labs organization for incubating projects.
   - url: https://openwallet.foundation/blog/
     name: Blog
@@ -157,7 +157,7 @@ common:
     description: OpenWallet Foundation privacy policy.
   - url: https://openwallet.foundation/terms-of-use/
     name: Terms of Service
-    type: Terms of Service
+    type: TermsOfService
     description: OpenWallet Foundation terms of use.
 maintainers:
   - FN: Kin Lane
