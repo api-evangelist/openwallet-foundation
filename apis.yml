@@ -119,6 +119,8 @@ apis:
       - type: GitHubRepository
         url: https://github.com/openwallet-foundation/sd-jwt-js
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/open-wallet-foundation
   - url: https://openwallet.foundation/
     name: OpenWallet Foundation
     type: Website
