@@ -1,0 +1,111 @@
+openapi: 3.1.0
+info:
+  title: ACA-Py Admin API
+  description: >-
+    Aries Cloud Agent Python (ACA-Py), a project of the OpenWallet Foundation,
+    exposes an OpenAPI-documented REST Admin API used by controller
+    applications to manage agent behavior, connections, and verifiable
+    credential exchanges over DIDComm. This OpenAPI definition captures the
+    primary topic endpoints documented in the ACA-Py Admin API guide. The
+    exact set of endpoints exposed by a running agent depends on the protocols
+    loaded at startup. Authentication is via an admin API key supplied in the
+    X-API-Key header when ACA-Py is started with --admin-api-key.
+  version: "1.0.0"
+  contact:
+    name: ACA-Py Documentation
+    url: https://aca-py.org/
+servers:
+  - url: http://{host}:{port}
+    description: ACA-Py admin endpoint (host and port set via --admin)
+    variables:
+      host:
+        default: localhost
+      port:
+        default: "3001"
+security:
+  - AdminApiKey: []
+paths:
+  /connections:
+    get:
+      summary: List pairwise connection records
+      description: Returns connection records tracked by the agent.
+      operationId: listConnections
+      responses:
+        "200":
+          description: Connection records
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items:
+                      type: object
+  /basicmessages:
+    get:
+      summary: List basic messages
+      description: Returns basic messages received by the agent.
+      operationId: listBasicMessages
+      responses:
+        "200":
+          description: Basic message records
+          content:
+            application/json:
+              schema:
+                type: object
+  /issue_credential:
+    get:
+      summary: List credential exchange records
+      description: Returns credential issuance exchange records (proposals, offers, requests, issued credentials).
+      operationId: listCredentialExchanges
+      responses:
+        "200":
+          description: Credential exchange records
+          content:
+            application/json:
+              schema:
+                type: object
+  /present_proof:
+    get:
+      summary: List proof presentation records
+      description: Returns presentation exchange records for verifier and prover roles.
+      operationId: listPresentationExchanges
+      responses:
+        "200":
+          description: Presentation exchange records
+          content:
+            application/json:
+              schema:
+                type: object
+  /forward:
+    get:
+      summary: List forward messages
+      description: Returns forward message delivery records. Requires the agent to be run with --monitor-forward.
+      operationId: listForwardMessages
+      responses:
+        "200":
+          description: Forward message records
+          content:
+            application/json:
+              schema:
+                type: object
+  /ws:
+    get:
+      summary: WebSocket webhook stream
+      description: >-
+        Upgrade endpoint for receiving webhook events over WebSocket. Each
+        message contains a topic, payload, and optional wallet_id. WebSocket
+        clients should send the Authorization header (Bearer JWT) and the
+        X-API-Key header.
+      operationId: webhookWebSocket
+      responses:
+        "101":
+          description: Switching Protocols to WebSocket
+components:
+  securitySchemes:
+    AdminApiKey:
+      type: apiKey
+      in: header
+      name: X-API-Key
+      description: Admin API key configured at agent startup via --admin-api-key.
