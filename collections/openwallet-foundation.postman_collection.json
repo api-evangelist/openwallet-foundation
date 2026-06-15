@@ -1,0 +1,742 @@
+{
+  "item": [
+    {
+      "id": "48024632-44e7-449a-822c-9418069f241a",
+      "name": "List pairwise connection records",
+      "request": {
+        "name": "List pairwise connection records",
+        "description": {
+          "content": "Returns connection records tracked by the agent.",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "connections"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "{{host}}",
+              "key": "host"
+            },
+            {
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "{{port}}",
+              "key": "port"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "8641eb02-ce83-4cf2-9e9c-d16d9191c304",
+          "name": "Connection records",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "connections"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-API-Key",
+                "value": "<API Key>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "f2220b90-85f3-4560-8ad8-befe363a6b91",
+      "name": "List basic messages",
+      "request": {
+        "name": "List basic messages",
+        "description": {
+          "content": "Returns basic messages received by the agent.",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "basicmessages"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "{{host}}",
+              "key": "host"
+            },
+            {
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "{{port}}",
+              "key": "port"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "948ef6d1-fd8c-47f0-bcd9-c929b4ccf450",
+          "name": "Basic message records",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "basicmessages"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-API-Key",
+                "value": "<API Key>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "1cf5cb83-a1f5-47c0-bddd-758d2f2db37a",
+      "name": "List credential exchange records",
+      "request": {
+        "name": "List credential exchange records",
+        "description": {
+          "content": "Returns credential issuance exchange records (proposals, offers, requests, issued credentials).",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "issue_credential"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "{{host}}",
+              "key": "host"
+            },
+            {
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "{{port}}",
+              "key": "port"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "bf5fa608-6aab-4763-8a64-e737e3c87f96",
+          "name": "Credential exchange records",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "issue_credential"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-API-Key",
+                "value": "<API Key>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "a31b2e06-a5e1-49a4-a01b-6fc3bd7e310d",
+      "name": "List proof presentation records",
+      "request": {
+        "name": "List proof presentation records",
+        "description": {
+          "content": "Returns presentation exchange records for verifier and prover roles.",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "present_proof"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "{{host}}",
+              "key": "host"
+            },
+            {
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "{{port}}",
+              "key": "port"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "1ca10bfc-9181-4878-b91f-fbdfffcea21a",
+          "name": "Presentation exchange records",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "present_proof"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-API-Key",
+                "value": "<API Key>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "466ca87e-c28b-4d94-ac9a-e5575a87ebb4",
+      "name": "List forward messages",
+      "request": {
+        "name": "List forward messages",
+        "description": {
+          "content": "Returns forward message delivery records. Requires the agent to be run with --monitor-forward.",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "forward"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "{{host}}",
+              "key": "host"
+            },
+            {
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "{{port}}",
+              "key": "port"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "14c48ccd-09cf-4052-87b3-e6d4df764038",
+          "name": "Forward message records",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "forward"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-API-Key",
+                "value": "<API Key>"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "OK",
+          "code": 200,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": "{}",
+          "cookie": [],
+          "_postman_previewlanguage": "json"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    },
+    {
+      "id": "f040af53-e863-46c1-beac-6fbbed2eab60",
+      "name": "WebSocket webhook stream",
+      "request": {
+        "name": "WebSocket webhook stream",
+        "description": {
+          "content": "Upgrade endpoint for receiving webhook events over WebSocket. Each message contains a topic, payload, and optional wallet_id. WebSocket clients should send the Authorization header (Bearer JWT) and the X-API-Key header.",
+          "type": "text/plain"
+        },
+        "url": {
+          "path": [
+            "ws"
+          ],
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "{{host}}",
+              "key": "host"
+            },
+            {
+              "description": {
+                "content": "",
+                "type": "text/plain"
+              },
+              "type": "any",
+              "value": "{{port}}",
+              "key": "port"
+            }
+          ]
+        },
+        "method": "GET",
+        "auth": null
+      },
+      "response": [
+        {
+          "id": "fe9d60a9-ca29-4099-923c-6fcaedd976fd",
+          "name": "Switching Protocols to WebSocket",
+          "originalRequest": {
+            "url": {
+              "path": [
+                "ws"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "description": {
+                  "content": "Added as a part of security scheme: apikey",
+                  "type": "text/plain"
+                },
+                "key": "X-API-Key",
+                "value": "<API Key>"
+              }
+            ],
+            "method": "GET",
+            "body": {}
+          },
+          "status": "Switching Protocols",
+          "code": 101,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "text/plain"
+            }
+          ],
+          "body": "",
+          "cookie": [],
+          "_postman_previewlanguage": "text"
+        }
+      ],
+      "event": [],
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      }
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "localhost",
+      "key": "host"
+    },
+    {
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "3001",
+      "key": "port"
+    },
+    {
+      "type": "string",
+      "value": "http://{{host}}:{{port}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-Key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "071f7539-dd2a-42f2-9d90-6e30e986d317",
+    "name": "ACA-Py Admin API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Aries Cloud Agent Python (ACA-Py), a project of the OpenWallet Foundation, exposes an OpenAPI-documented REST Admin API used by controller applications to manage agent behavior, connections, and verifiable credential exchanges over DIDComm. This OpenAPI definition captures the primary topic endpoints documented in the ACA-Py Admin API guide. The exact set of endpoints exposed by a running agent depends on the protocols loaded at startup. Authentication is via an admin API key supplied in the X-API-Key header when ACA-Py is started with --admin-api-key.\n\nContact Support:\n Name: ACA-Py Documentation",
+      "type": "text/plain"
+    }
+  }
+}
