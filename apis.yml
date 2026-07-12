@@ -119,6 +119,10 @@ apis:
       - type: GitHubRepository
         url: https://github.com/openwallet-foundation/sd-jwt-js
 common:
+  - type: DomainSecurity
+    url: security/openwallet-foundation-domain-security.yml
+  - type: Authentication
+    url: authentication/openwallet-foundation-authentication.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/open-wallet-foundation
   - url: https://openwallet.foundation/

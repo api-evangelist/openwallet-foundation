@@ -1,0 +1,16 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/openwallet-foundation-openapi.yml
+summary:
+  types:
+  - apiKey
+  api_key_in:
+  - header
+schemes:
+- name: AdminApiKey
+  type: apiKey
+  in: header
+  parameter: X-API-Key
+  description: Admin API key configured at agent startup via --admin-api-key.
+  sources:
+  - openapi/openwallet-foundation-openapi.yml
