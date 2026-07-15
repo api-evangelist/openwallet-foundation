@@ -119,6 +119,8 @@ apis:
       - type: GitHubRepository
         url: https://github.com/openwallet-foundation/sd-jwt-js
 common:
+  - type: AgenticAccess
+    url: agentic-access/openwallet-foundation-agentic-access.yml
   - type: DomainSecurity
     url: security/openwallet-foundation-domain-security.yml
   - type: Authentication
