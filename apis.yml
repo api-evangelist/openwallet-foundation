@@ -3,9 +3,22 @@ name: OpenWallet Foundation
 description: >-
   The OpenWallet Foundation is a Linux Foundation Europe project that brings developers and standards organizations together to facilitate global interoperability of verifiable credentials and digital wallet technology. It develops open source engines for secure, privacy-preserving digital identity solutions.
 type: Index
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 position: Consumer
 access: 3rd-Party
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/openwallet-foundation.png
 tags:
   - Credentials
   - Digital Wallet
@@ -17,107 +30,154 @@ url: >-
   https://raw.githubusercontent.com/api-evangelist/openwallet-foundation/refs/heads/main/apis.yml
 specificationVersion: '0.19'
 apis:
-  - aid: openwallet-foundation:aca-py-admin-api
-    name: ACA-Py Admin API
-    description: >-
-      Aries Cloud Agent Python (ACA-Py) exposes an OpenAPI-documented REST
-      Admin API used by controller applications to manage agent behavior,
-      issue and verify credentials, exchange messages, and orchestrate DIDComm
-      protocols. The exact set of endpoints is generated dynamically based on
-      the protocols loaded by the running agent.
-    humanURL: https://aca-py.org/
-    tags:
-      - Aries
-      - Credentials
-      - DIDComm
-      - Digital Wallet
-      - Identity
-    properties:
-      - type: Documentation
-        url: https://aca-py.org/
-      - type: Reference
-        url: https://github.com/openwallet-foundation/acapy/blob/main/docs/features/AdminAPI.md
-      - type: GitHubRepository
-        url: https://github.com/openwallet-foundation/acapy
-  - aid: openwallet-foundation:credo-api
-    name: Credo API
-    description: >-
-      Credo (formerly Aries Framework JavaScript) is a TypeScript framework
-      for building decentralized identity and verifiable credential
-      applications. It exposes programmatic interfaces for issuing,
-      verifying, and exchanging credentials over DIDComm and OpenID for
-      Verifiable Credentials.
-    humanURL: https://credo.js.org/
-    tags:
-      - Aries
-      - Credentials
-      - DIDComm
-      - Digital Wallet
-      - Identity
-      - JavaScript
-    properties:
-      - type: Documentation
-        url: https://credo.js.org/
-      - type: GitHubRepository
-        url: https://github.com/openwallet-foundation/credo-ts
-  - aid: openwallet-foundation:askar-api
-    name: Askar API
-    description: >-
-      Askar is a secure storage backend for digital wallets that manages
-      cryptographic keys, secrets, and credential records. It provides
-      language bindings (Python, Rust, JavaScript, Kotlin, Swift) for
-      reading and writing wallet entries and performing cryptographic
-      operations.
-    humanURL: https://github.com/openwallet-foundation/askar
-    tags:
-      - Cryptography
-      - Digital Wallet
-      - Storage
-    properties:
-      - type: Documentation
-        url: https://github.com/openwallet-foundation/askar
-      - type: GitHubRepository
-        url: https://github.com/openwallet-foundation/askar
-  - aid: openwallet-foundation:vc-api
-    name: VC API
-    description: >-
-      VC API is an implementation of the W3C Verifiable Credentials API draft
-      standard, exposing REST endpoints for verifiable credential issuance,
-      verification, and presentation exchange.
-    humanURL: https://github.com/openwallet-foundation-labs/vc-api
-    tags:
-      - Credentials
-      - Identity
-      - Verifiable Credentials
-      - W3C
-    properties:
-      - type: Documentation
-        url: https://github.com/openwallet-foundation-labs/vc-api
-      - type: Reference
-        url: https://w3c-ccg.github.io/vc-api/
-      - type: GitHubRepository
-        url: https://github.com/openwallet-foundation-labs/vc-api
-  - aid: openwallet-foundation:sd-jwt-api
-    name: SD-JWT Libraries
-    description: >-
-      OpenWallet Foundation maintains Selective Disclosure for JSON Web
-      Tokens (SD-JWT) libraries across multiple languages including
-      JavaScript, Python, Rust, Kotlin, and .NET. These libraries expose
-      programmatic interfaces for issuing, holding, and verifying SD-JWT
-      and SD-JWT-VC credentials.
-    humanURL: https://github.com/openwallet-foundation/sd-jwt-js
-    tags:
-      - Credentials
-      - Cryptography
-      - JWT
-      - Selective Disclosure
-    properties:
-      - type: Documentation
-        url: https://github.com/openwallet-foundation/sd-jwt-js
-      - type: Reference
-        url: https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/
-      - type: GitHubRepository
-        url: https://github.com/openwallet-foundation/sd-jwt-js
+- aid: openwallet-foundation:aca-py-admin-api
+  name: ACA-Py Admin API
+  description: >-
+    Aries Cloud Agent Python (ACA-Py) exposes an OpenAPI-documented REST Admin API used by controller
+    applications to manage agent behavior, issue and verify credentials, exchange messages, and orchestrate
+    DIDComm protocols. The exact set of endpoints is generated dynamically based on the protocols loaded
+    by the running agent.
+  humanURL: https://aca-py.org/
+  tags:
+  - Aries
+  - Credentials
+  - DIDComm
+  - Digital Wallet
+  - Identity
+  properties:
+  - type: Documentation
+    url: https://aca-py.org/
+  - type: Reference
+    url: https://github.com/openwallet-foundation/acapy/blob/main/docs/features/AdminAPI.md
+  - type: GitHubRepository
+    url: https://github.com/openwallet-foundation/acapy
+- aid: openwallet-foundation:credo-api
+  name: Credo API
+  description: >-
+    Credo (formerly Aries Framework JavaScript) is a TypeScript framework for building decentralized identity
+    and verifiable credential applications. It exposes programmatic interfaces for issuing, verifying,
+    and exchanging credentials over DIDComm and OpenID for Verifiable Credentials.
+  humanURL: https://credo.js.org/
+  tags:
+  - Aries
+  - Credentials
+  - DIDComm
+  - Digital Wallet
+  - Identity
+  - JavaScript
+  properties:
+  - type: Documentation
+    url: https://credo.js.org/
+  - type: GitHubRepository
+    url: https://github.com/openwallet-foundation/credo-ts
+- aid: openwallet-foundation:askar-api
+  name: Askar API
+  description: >-
+    Askar is a secure storage backend for digital wallets that manages cryptographic keys, secrets, and
+    credential records. It provides language bindings (Python, Rust, JavaScript, Kotlin, Swift) for reading
+    and writing wallet entries and performing cryptographic operations.
+  humanURL: https://github.com/openwallet-foundation/askar
+  tags:
+  - Cryptography
+  - Digital Wallet
+  - Storage
+  properties:
+  - type: Documentation
+    url: https://github.com/openwallet-foundation/askar
+  - type: GitHubRepository
+    url: https://github.com/openwallet-foundation/askar
+- aid: openwallet-foundation:vc-api
+  name: VC API
+  description: >-
+    VC API is an implementation of the W3C Verifiable Credentials API draft standard, exposing REST endpoints
+    for verifiable credential issuance, verification, and presentation exchange.
+  humanURL: https://github.com/openwallet-foundation-labs/vc-api
+  tags:
+  - Credentials
+  - Identity
+  - Verifiable Credentials
+  - W3C
+  properties:
+  - type: Documentation
+    url: https://github.com/openwallet-foundation-labs/vc-api
+  - type: Reference
+    url: https://w3c-ccg.github.io/vc-api/
+  - type: GitHubRepository
+    url: https://github.com/openwallet-foundation-labs/vc-api
+- aid: openwallet-foundation:sd-jwt-api
+  name: SD-JWT Libraries
+  description: >-
+    OpenWallet Foundation maintains Selective Disclosure for JSON Web Tokens (SD-JWT) libraries across
+    multiple languages including JavaScript, Python, Rust, Kotlin, and .NET. These libraries expose programmatic
+    interfaces for issuing, holding, and verifying SD-JWT and SD-JWT-VC credentials.
+  humanURL: https://github.com/openwallet-foundation/sd-jwt-js
+  tags:
+  - Credentials
+  - Cryptography
+  - JWT
+  - Selective Disclosure
+  properties:
+  - type: Documentation
+    url: https://github.com/openwallet-foundation/sd-jwt-js
+  - type: Reference
+    url: https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/
+  - type: GitHubRepository
+    url: https://github.com/openwallet-foundation/sd-jwt-js
+- aid: openwallet-foundation:openwallet-foundation-basicmessages-api
+  name: OpenWallet Foundation Basicmessages API
+  description: The Basicmessages API from OpenWallet Foundation — 1 operation(s) for basicmessages.
+  humanURL: https://aca-py.org/
+  tags:
+  - Basicmessages
+  properties:
+  - type: OpenAPI
+    url: openapi/openwallet-foundation-basicmessages-api-openapi.yml
+- aid: openwallet-foundation:openwallet-foundation-connections-api
+  name: OpenWallet Foundation Connections API
+  description: The Connections API from OpenWallet Foundation — 1 operation(s) for connections.
+  humanURL: https://aca-py.org/
+  tags:
+  - Connections
+  properties:
+  - type: OpenAPI
+    url: openapi/openwallet-foundation-connections-api-openapi.yml
+- aid: openwallet-foundation:openwallet-foundation-forward-api
+  name: OpenWallet Foundation Forward API
+  description: The Forward API from OpenWallet Foundation — 1 operation(s) for forward.
+  humanURL: https://aca-py.org/
+  tags:
+  - Forward
+  properties:
+  - type: OpenAPI
+    url: openapi/openwallet-foundation-forward-api-openapi.yml
+- aid: openwallet-foundation:openwallet-foundation-issue-credential-api
+  name: OpenWallet Foundation Issue Credential API
+  description: >-
+    The Issue Credential API from OpenWallet Foundation — 1 operation(s) for issue credential.
+  humanURL: https://aca-py.org/
+  tags:
+  - Issue Credential
+  properties:
+  - type: OpenAPI
+    url: openapi/openwallet-foundation-issue-credential-api-openapi.yml
+- aid: openwallet-foundation:openwallet-foundation-present-proof-api
+  name: OpenWallet Foundation Present Proof API
+  description: The Present Proof API from OpenWallet Foundation — 1 operation(s) for present proof.
+  humanURL: https://aca-py.org/
+  tags:
+  - Present Proof
+  properties:
+  - type: OpenAPI
+    url: openapi/openwallet-foundation-present-proof-api-openapi.yml
+- aid: openwallet-foundation:openwallet-foundation-ws-api
+  name: OpenWallet Foundation Ws API
+  description: The Ws API from OpenWallet Foundation — 1 operation(s) for ws.
+  humanURL: https://aca-py.org/
+  tags:
+  - Ws
+  properties:
+  - type: OpenAPI
+    url: openapi/openwallet-foundation-ws-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/openwallet-foundation-agentic-access.yml
