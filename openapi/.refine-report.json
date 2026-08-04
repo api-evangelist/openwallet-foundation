@@ -1,0 +1,24 @@
+{
+  "provider": "openwallet-foundation",
+  "sources": [
+    "openwallet-foundation-basicmessages-api-openapi.yml",
+    "openwallet-foundation-connections-api-openapi.yml",
+    "openwallet-foundation-forward-api-openapi.yml",
+    "openwallet-foundation-issue-credential-api-openapi.yml",
+    "openwallet-foundation-present-proof-api-openapi.yml",
+    "openwallet-foundation-ws-api-openapi.yml"
+  ],
+  "outputs": [
+    "openwallet-foundation-basicmessages-api-openapi.yml",
+    "openwallet-foundation-connections-api-openapi.yml",
+    "openwallet-foundation-forward-api-openapi.yml",
+    "openwallet-foundation-issue-credential-api-openapi.yml",
+    "openwallet-foundation-present-proof-api-openapi.yml",
+    "openwallet-foundation-ws-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
