@@ -179,6 +179,9 @@ apis:
   - type: OpenAPI
     url: openapi/openwallet-foundation-ws-api-openapi.yml
 common:
+  - type: License
+    name: Apache-2.0
+    url: https://github.com/openwallet-foundation/acapy/blob/main/LICENSE
   - type: AgenticAccess
     url: agentic-access/openwallet-foundation-agentic-access.yml
   - type: DomainSecurity
