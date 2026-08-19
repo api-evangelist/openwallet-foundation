@@ -28,7 +28,7 @@ created: '2026-03-16'
 modified: '2026-04-28'
 url: >-
   https://raw.githubusercontent.com/api-evangelist/openwallet-foundation/refs/heads/main/apis.yml
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 apis:
 - aid: openwallet-foundation:aca-py-admin-api
   name: ACA-Py Admin API
