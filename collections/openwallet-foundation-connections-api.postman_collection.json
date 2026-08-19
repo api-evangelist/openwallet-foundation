@@ -1,0 +1,183 @@
+{
+  "item": [
+    {
+      "id": "5a74bf72-fa92-463b-849d-69f071b10fa8",
+      "name": "Connections",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "f887070c-724e-4079-b107-db132a4c1aac",
+          "name": "List pairwise connection records",
+          "request": {
+            "name": "List pairwise connection records",
+            "description": {
+              "content": "Returns connection records tracked by the agent.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "connections"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "d6f899ef-cee6-4d59-91a2-e4d00416bb14",
+              "name": "Connection records",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "connections"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-Key",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "localhost",
+      "key": "host"
+    },
+    {
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "3001",
+      "key": "port"
+    },
+    {
+      "type": "string",
+      "value": "http://{{host}}:{{port}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-Key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "a3cef2f7-5466-4dd0-b35a-02800228e08c",
+    "name": "ACA-Py Admin Basicmessages Connections API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Aries Cloud Agent Python (ACA-Py), a project of the OpenWallet Foundation, exposes an OpenAPI-documented REST Admin API used by controller applications to manage agent behavior, connections, and verifiable credential exchanges over DIDComm. This OpenAPI definition captures the primary topic endpoints documented in the ACA-Py Admin API guide. The exact set of endpoints exposed by a running agent depends on the protocols loaded at startup. Authentication is via an admin API key supplied in the X-API-Key header when ACA-Py is started with --admin-api-key.\n\nContact Support:\n Name: ACA-Py Documentation",
+      "type": "text/plain"
+    }
+  }
+}

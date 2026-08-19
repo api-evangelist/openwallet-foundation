@@ -1,0 +1,173 @@
+{
+  "item": [
+    {
+      "id": "b18e639a-1e9a-4e8f-a66a-03ce20ffd061",
+      "name": "Ws",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "50e0ee57-c3be-4a88-8ad8-4956522f7d1f",
+          "name": "WebSocket webhook stream",
+          "request": {
+            "name": "WebSocket webhook stream",
+            "description": {
+              "content": "Upgrade endpoint for receiving webhook events over WebSocket. Each message contains a topic, payload, and optional wallet_id. WebSocket clients should send the Authorization header (Bearer JWT) and the X-API-Key header.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "ws"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "63babcc3-77d5-4661-949c-35fdf8450bcb",
+              "name": "Switching Protocols to WebSocket",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "ws"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-Key",
+                    "value": "<API Key>"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "Switching Protocols",
+              "code": 101,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "localhost",
+      "key": "host"
+    },
+    {
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "3001",
+      "key": "port"
+    },
+    {
+      "type": "string",
+      "value": "http://{{host}}:{{port}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-Key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "02119e66-059f-4de9-bcb7-23973a6d0422",
+    "name": "ACA-Py Admin Basicmessages Ws API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Aries Cloud Agent Python (ACA-Py), a project of the OpenWallet Foundation, exposes an OpenAPI-documented REST Admin API used by controller applications to manage agent behavior, connections, and verifiable credential exchanges over DIDComm. This OpenAPI definition captures the primary topic endpoints documented in the ACA-Py Admin API guide. The exact set of endpoints exposed by a running agent depends on the protocols loaded at startup. Authentication is via an admin API key supplied in the X-API-Key header when ACA-Py is started with --admin-api-key.\n\nContact Support:\n Name: ACA-Py Documentation",
+      "type": "text/plain"
+    }
+  }
+}

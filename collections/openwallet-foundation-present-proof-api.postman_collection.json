@@ -1,0 +1,183 @@
+{
+  "item": [
+    {
+      "id": "726f2ea3-01d0-4318-b0d3-f1529ee97c74",
+      "name": "Present Proof",
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "c058a403-4512-4910-a5c7-5156c7ad383f",
+          "name": "List proof presentation records",
+          "request": {
+            "name": "List proof presentation records",
+            "description": {
+              "content": "Returns presentation exchange records for verifier and prover roles.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "present_proof"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": [
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{host}}",
+                  "key": "host"
+                },
+                {
+                  "description": {
+                    "content": "",
+                    "type": "text/plain"
+                  },
+                  "type": "any",
+                  "value": "{{port}}",
+                  "key": "port"
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3818fdf5-42c0-4d15-882b-6c847a6992fa",
+              "name": "Presentation exchange records",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "present_proof"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": [
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{host}}",
+                      "key": "host"
+                    },
+                    {
+                      "description": {
+                        "content": "",
+                        "type": "text/plain"
+                      },
+                      "type": "any",
+                      "value": "{{port}}",
+                      "key": "port"
+                    }
+                  ]
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: apikey",
+                      "type": "text/plain"
+                    },
+                    "key": "X-API-Key",
+                    "value": "<API Key>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "localhost",
+      "key": "host"
+    },
+    {
+      "description": {
+        "content": "",
+        "type": "text/plain"
+      },
+      "type": "any",
+      "value": "3001",
+      "key": "port"
+    },
+    {
+      "type": "string",
+      "value": "http://{{host}}:{{port}}",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "apikey",
+    "apikey": [
+      {
+        "key": "key",
+        "value": "X-API-Key"
+      },
+      {
+        "key": "value",
+        "value": "{{apiKey}}"
+      },
+      {
+        "key": "in",
+        "value": "header"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "70ba619f-c10d-4e8c-8793-47b44b022734",
+    "name": "ACA-Py Admin Basicmessages Present Proof API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Aries Cloud Agent Python (ACA-Py), a project of the OpenWallet Foundation, exposes an OpenAPI-documented REST Admin API used by controller applications to manage agent behavior, connections, and verifiable credential exchanges over DIDComm. This OpenAPI definition captures the primary topic endpoints documented in the ACA-Py Admin API guide. The exact set of endpoints exposed by a running agent depends on the protocols loaded at startup. Authentication is via an admin API key supplied in the X-API-Key header when ACA-Py is started with --admin-api-key.\n\nContact Support:\n Name: ACA-Py Documentation",
+      "type": "text/plain"
+    }
+  }
+}
