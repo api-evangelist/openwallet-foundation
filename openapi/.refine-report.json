@@ -1,12 +1,7 @@
 {
   "provider": "openwallet-foundation",
   "sources": [
-    "openwallet-foundation-basicmessages-api-openapi.yml",
-    "openwallet-foundation-connections-api-openapi.yml",
-    "openwallet-foundation-forward-api-openapi.yml",
-    "openwallet-foundation-issue-credential-api-openapi.yml",
-    "openwallet-foundation-present-proof-api-openapi.yml",
-    "openwallet-foundation-ws-api-openapi.yml"
+    "_original/openwallet-foundation-openapi.yml"
   ],
   "outputs": [
     "openwallet-foundation-basicmessages-api-openapi.yml",
@@ -19,6 +14,29 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "openwallet-foundation-openapi.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "openwallet-foundation-openapi.yml: tagged paths GET /connections -> Connections",
+    "openwallet-foundation-openapi.yml: tagged paths GET /basicmessages -> Basicmessages",
+    "openwallet-foundation-openapi.yml: tagged paths GET /issue_credential -> Issue Credential",
+    "openwallet-foundation-openapi.yml: tagged paths GET /present_proof -> Present Proof",
+    "openwallet-foundation-openapi.yml: tagged paths GET /forward -> Forward",
+    "openwallet-foundation-openapi.yml: tagged paths GET /ws -> Ws",
+    "openwallet-foundation-openapi.yml: declared missing tag: Basicmessages",
+    "openwallet-foundation-openapi.yml: declared missing tag: Connections",
+    "openwallet-foundation-openapi.yml: declared missing tag: Forward",
+    "openwallet-foundation-openapi.yml: declared missing tag: Issue Credential",
+    "openwallet-foundation-openapi.yml: declared missing tag: Present Proof",
+    "openwallet-foundation-openapi.yml: declared missing tag: Ws",
+    "apis.yml register: already-registered"
+  ],
+  "skipped": [
+    "openwallet-foundation-basicmessages-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "openwallet-foundation-connections-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "openwallet-foundation-forward-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "openwallet-foundation-issue-credential-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "openwallet-foundation-present-proof-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "openwallet-foundation-ws-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
