@@ -194,6 +194,12 @@ apis:
   - type: OpenAPI
     url: openapi/openwallet-foundation-ws-api-openapi.yml
 common:
+  - type: Plans
+    url: plans/openwallet-foundation-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/openwallet-foundation-rate-limits.yml
+  - type: FinOps
+    url: finops/openwallet-foundation-finops.yml
   - type: IssueTracker
     url: https://github.com/openwallet-foundation/acapy/issues
   - type: Releases
