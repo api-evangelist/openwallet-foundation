@@ -1,4 +1,4 @@
-# OpenWallet Foundation (openwallet-foundation)
+# OpenWallet Foundation
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,148 +66,134 @@
 
 The OpenWallet Foundation is a Linux Foundation Europe project that brings developers and standards organizations together to facilitate global interoperability of verifiable credentials and digital wallet technology. It develops open source engines for secure, privacy-preserving digital identity solutions.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/openwallet-foundation/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/openwallet-foundation/refs/heads/main/apis.yml)
+**Areas:** Credentials · Digital Wallet · Identity · Linux Foundation
 
-## Scope
+## OpenWallet Foundation on APIs.io
 
-- **Type:** Index
-- **Position:** Consumer
-- **Access:** 3rd-Party
+Everything profiled for OpenWallet Foundation is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/openwallet-foundation/](https://apis.io/providers/openwallet-foundation/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (11)
 
-- Credentials
-- Digital Wallet
-- Identity
-- Linux Foundation
+- [ACA-Py Admin API](https://apis.io/apis/openwallet-foundation/aca-py-admin-api/) — Aries Cloud Agent Python (ACA-Py) exposes an OpenAPI-documented REST Admin API used by controller applications to manage agent behavior, issue and verify…
+- [Credo API](https://apis.io/apis/openwallet-foundation/credo-api/) — Credo (formerly Aries Framework JavaScript) is a TypeScript framework for building decentralized identity and verifiable credential applications. It exposes…
+- [Askar API](https://apis.io/apis/openwallet-foundation/askar-api/) — Askar is a secure storage backend for digital wallets that manages cryptographic keys, secrets, and credential records. It provides language bindings…
+- [VC API](https://apis.io/apis/openwallet-foundation/vc-api/) — VC API is an implementation of the W3C Verifiable Credentials API draft standard, exposing REST endpoints for verifiable credential issuance, verification,…
+- [SD-JWT Libraries](https://apis.io/apis/openwallet-foundation/sd-jwt-api/) — OpenWallet Foundation maintains Selective Disclosure for JSON Web Tokens (SD-JWT) libraries across multiple languages including JavaScript, Python, Rust,…
+- [OpenWallet Foundation Basicmessages API](https://apis.io/apis/openwallet-foundation/openwallet-foundation-basicmessages-api/) — The Basicmessages API from OpenWallet Foundation — 1 operation(s) for basicmessages.
+- [OpenWallet Foundation Connections API](https://apis.io/apis/openwallet-foundation/openwallet-foundation-connections-api/) — The Connections API from OpenWallet Foundation — 1 operation(s) for connections.
+- [OpenWallet Foundation Forward API](https://apis.io/apis/openwallet-foundation/openwallet-foundation-forward-api/) — The Forward API from OpenWallet Foundation — 1 operation(s) for forward.
+- [OpenWallet Foundation Issue Credential API](https://apis.io/apis/openwallet-foundation/openwallet-foundation-issue-credential-api/) — The Issue Credential API from OpenWallet Foundation — 1 operation(s) for issue credential.
+- [OpenWallet Foundation Present Proof API](https://apis.io/apis/openwallet-foundation/openwallet-foundation-present-proof-api/) — The Present Proof API from OpenWallet Foundation — 1 operation(s) for present proof.
+- [OpenWallet Foundation Ws API](https://apis.io/apis/openwallet-foundation/openwallet-foundation-ws-api/) — The Ws API from OpenWallet Foundation — 1 operation(s) for ws.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-04-28
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Agentic access (1)
 
-### ACA-Py Admin API
+Which operations an agent can call, which act, and which need a human in the loop.
 
-Aries Cloud Agent Python (ACA-Py) exposes an OpenAPI-documented REST Admin API used by controller applications to manage agent behavior, issue and verify credentials, exchange messages, and orchestrate DIDComm protocols. The exact set of endpoints is generated dynamically based on the protocols loaded by the running agent.
+- [Openwallet Foundation Agentic Access](https://apis.io/agentic-access/openwallet-foundation/openwallet-foundation-agentic-access/)
 
-- **Human URL:** [https://aca-py.org/](https://aca-py.org/)
+#### Collections (7)
 
-#### Tags
+Postman and Open Collection request collections.
 
-- Aries
-- Credentials
-- DIDComm
-- Digital Wallet
-- Identity
+- [ACA-Py Admin API](https://apis.io/collections/openwallet-foundation/open-openwallet-foundation/)
+- [ACA-Py Admin Basicmessages API](https://apis.io/collections/openwallet-foundation/open-openwallet-foundation-basicmessages-api/)
+- [ACA-Py Admin Basicmessages Connections API](https://apis.io/collections/openwallet-foundation/open-openwallet-foundation-connections-api/)
+- [ACA-Py Admin Basicmessages Forward API](https://apis.io/collections/openwallet-foundation/open-openwallet-foundation-forward-api/)
+- [ACA-Py Admin Basicmessages Issue Credential API](https://apis.io/collections/openwallet-foundation/open-openwallet-foundation-issue-credential-api/)
+- [ACA-Py Admin Basicmessages Present Proof API](https://apis.io/collections/openwallet-foundation/open-openwallet-foundation-present-proof-api/)
+- [ACA-Py Admin Basicmessages Ws API](https://apis.io/collections/openwallet-foundation/open-openwallet-foundation-ws-api/)
 
-#### Properties
+#### Security (2)
 
-- [Documentation](https://aca-py.org/)
-- [Reference](https://github.com/openwallet-foundation/acapy/blob/main/docs/features/AdminAPI.md)
-- [GitHub Repository](https://github.com/openwallet-foundation/acapy)
-- [Postman Collection](collections/openwallet-foundation.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/openwallet-foundation.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Authentication, trust centre, and vulnerability disclosure.
 
-### Credo API
+- [Openwallet Foundation Authentication](https://apis.io/security/openwallet-foundation/openwallet-foundation-authentication/)
+- [Openwallet Foundation Domain Security](https://apis.io/security/openwallet-foundation/openwallet-foundation-domain-security/)
 
-Credo (formerly Aries Framework JavaScript) is a TypeScript framework for building decentralized identity and verifiable credential applications. It exposes programmatic interfaces for issuing, verifying, and exchanging credentials over DIDComm and OpenID for Verifiable Credentials.
+#### Plans and pricing (1)
 
-- **Human URL:** [https://credo.js.org/](https://credo.js.org/)
+Published plans, tiers and prices.
 
-#### Tags
+- [Openwallet Foundation Plans Pricing](https://apis.io/plans/openwallet-foundation/openwallet-foundation-plans-pricing/)
 
-- Aries
-- Credentials
-- DIDComm
-- Digital Wallet
-- Identity
-- JavaScript
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Documentation](https://credo.js.org/)
-- [GitHub Repository](https://github.com/openwallet-foundation/credo-ts)
-- [Postman Collection](collections/openwallet-foundation.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/openwallet-foundation.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Openwallet Foundation Rate Limits](https://apis.io/rate-limits/openwallet-foundation/openwallet-foundation-rate-limits/)
 
-### Askar API
+#### FinOps (1)
 
-Askar is a secure storage backend for digital wallets that manages cryptographic keys, secrets, and credential records. It provides language bindings (Python, Rust, JavaScript, Kotlin, Swift) for reading and writing wallet entries and performing cryptographic operations.
+What the API costs to run, by operation.
 
-- **Human URL:** [https://github.com/openwallet-foundation/askar](https://github.com/openwallet-foundation/askar)
+- [Openwallet Foundation Finops](https://apis.io/finops/openwallet-foundation/openwallet-foundation-finops/)
 
-#### Tags
+## Where to find this API
 
-- Cryptography
-- Digital Wallet
-- Storage
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-#### Properties
-
-- [Documentation](https://github.com/openwallet-foundation/askar)
-- [GitHub Repository](https://github.com/openwallet-foundation/askar)
-- [Postman Collection](collections/openwallet-foundation.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/openwallet-foundation.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### VC API
-
-VC API is an implementation of the W3C Verifiable Credentials API draft standard, exposing REST endpoints for verifiable credential issuance, verification, and presentation exchange.
-
-- **Human URL:** [https://github.com/openwallet-foundation-labs/vc-api](https://github.com/openwallet-foundation-labs/vc-api)
-
-#### Tags
-
-- Credentials
-- Identity
-- Verifiable Credentials
-- W3C
-
-#### Properties
-
-- [Documentation](https://github.com/openwallet-foundation-labs/vc-api)
-- [Reference](https://w3c-ccg.github.io/vc-api/)
-- [GitHub Repository](https://github.com/openwallet-foundation-labs/vc-api)
-- [Postman Collection](collections/openwallet-foundation.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/openwallet-foundation.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-### SD-JWT Libraries
-
-OpenWallet Foundation maintains Selective Disclosure for JSON Web Tokens (SD-JWT) libraries across multiple languages including JavaScript, Python, Rust, Kotlin, and .NET. These libraries expose programmatic interfaces for issuing, holding, and verifying SD-JWT and SD-JWT-VC credentials.
-
-- **Human URL:** [https://github.com/openwallet-foundation/sd-jwt-js](https://github.com/openwallet-foundation/sd-jwt-js)
-
-#### Tags
-
-- Credentials
-- Cryptography
-- JWT
-- Selective Disclosure
-
-#### Properties
-
-- [Documentation](https://github.com/openwallet-foundation/sd-jwt-js)
-- [Reference](https://datatracker.ietf.org/doc/draft-ietf-oauth-selective-disclosure-jwt/)
-- [GitHub Repository](https://github.com/openwallet-foundation/sd-jwt-js)
-- [Postman Collection](collections/openwallet-foundation.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/openwallet-foundation.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/open-wallet-foundation)
 - [Website](https://openwallet.foundation/)
 - [Documentation](https://openwallet.foundation/projects/)
-- [GitHub Organization](https://github.com/openwallet-foundation)
-- [GitHub Organization](https://github.com/openwallet-foundation-labs)
 - [Blog](https://openwallet.foundation/blog/)
-- [Community](https://openwallet.foundation/community/)
-- [Mailing  List](https://lists.openwallet.foundation/)
-- [About](https://openwallet.foundation/about/)
-- [Privacy](https://openwallet.foundation/privacy-policy/)
-- [Terms of Service](https://openwallet.foundation/terms-of-use/)
+- [Terms of service](https://openwallet.foundation/terms-of-use/)
+- [GitHub](https://github.com/openwallet-foundation)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** info@apievangelist.com
+**Kin Score 40.6** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 45.4 |
+| Contract governance | 0.0 |
+| Operational transparency | 39.5 |
+| Developer ergonomics | 35.7 |
+| Access clarity | 28.9 |
+
+**Agent readiness 19.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | — |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 17.9** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/openwallet-foundation/](https://apis.io/providers/openwallet-foundation/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for OpenWallet Foundation: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/openwallet-foundation/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
